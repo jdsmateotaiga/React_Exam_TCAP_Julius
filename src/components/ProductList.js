@@ -49,7 +49,7 @@ class ProductLists extends React.Component {
   componentDidMount() {
     this.setState({
       filteredproducts: this.state.products,
-      cart:  sessionStorage.getItem("yeah").split(',')
+      // cart:  sessionStorage.getItem("yeah")
     });
   }
 
@@ -80,7 +80,6 @@ class ProductLists extends React.Component {
     this.setState({
       cart
     });
-    sessionStorage.setItem("yeah", cart);
   }
 
   handleClickMenu(e) {
